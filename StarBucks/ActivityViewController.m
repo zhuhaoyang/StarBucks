@@ -40,11 +40,11 @@
     [UIView setAnimationDelay:0.3];
     
 
-    bigBt.frame = CGRectMake(0, 0, 320, 416);
+    bigBt.frame = CGRectMake(0, 0, 320, 460);
     
     
     [UIView commitAnimations];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     
 }
 
@@ -87,7 +87,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        arrImage = [[NSMutableArray alloc]initWithObjects:@"starbucks_02",@"1933_1.jpg",@"1933_2.jpg",@"1933_3.jpg",@"1933_4.jpg",@"1933_5.jpg", nil];
+        arrImage = [[NSMutableArray alloc]initWithObjects:@"starbucks_02",@"starbucks_50",@"starbucks_02",@"starbucks_50",@"starbucks_02",@"starbucks_50", nil];
         self.m_pagePhotosView = [[PagePhotosView alloc] initWithFrame: CGRectMake(80, 30, 160, 245) withDataSource:self delegate:self];
         [self.view addSubview:self.m_pagePhotosView];
 
@@ -99,7 +99,20 @@
 {
     [super viewDidLoad];
     self.title = @"活动推荐";
+    NSArray *array = [[NSArray alloc]initWithObjects:@"最新活动",@"热门推荐",nil];	
+	self.segment = [[UISegmentedControl alloc]initWithItems:array];
+	self.segment.segmentedControlStyle = UISegmentedControlStyleBar;
+	[self.segment addTarget:self action:@selector(changeSegmented) forControlEvents:UIControlEventValueChanged];
+	self.segment.selectedSegmentIndex = 0;
+	//[self.navigationController.navigationBar addSubview:segmented];
+	self.navigationItem.titleView = self.segment;
+
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)changeSegmented
+{
+
 }
 
 - (void)viewDidUnload

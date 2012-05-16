@@ -25,8 +25,8 @@
 @synthesize m_ShoppingCartViewController = _m_ShoppingCartViewController;
 @synthesize m_SBClubViewController = _m_SBClubViewControllerl;
 @synthesize m_SettingViewController = _m_SettingViewController;
-@synthesize m_GoogleMapViewController = _m_GoogleMapViewController;
-
+//@synthesize m_GoogleMapViewController = _m_GoogleMapViewController;
+@synthesize m_BaiduMapViewController = _m_BaiduMapViewController;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -78,8 +78,8 @@
 
 - (IBAction)clickBt2:(id)sender
 {
-    m_GoogleMapViewController = [[GoogleMapViewController alloc]initWithNibName:@"GoogleMapViewController" bundle:nil];
-    [self.navigationController pushViewController:m_GoogleMapViewController animated:YES];
+    m_BaiduMapViewController = [[BaiduMapViewController alloc]initWithNibName:@"BaiduMapViewController" bundle:nil];
+    [self.navigationController pushViewController:m_BaiduMapViewController animated:YES];
 }
 
 - (IBAction)clickBt3:(id)sender

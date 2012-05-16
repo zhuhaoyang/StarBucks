@@ -12,11 +12,25 @@
 
 @implementation AppDelegate
 
+BMKMapManager* _mapManager;
+
+
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    // 要使用百度地图,请先启动 BaiduMapManager
+    _mapManager = [[BMKMapManager alloc]init] ;
+    // 如果要关注网络及授权验证事件,请设定 generalDelegate 参 数
+    BOOL ret = [_mapManager start:@"F4F9C2FAE6D446691C3CF0D6D0E57685722FA51C" generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+    [BMKMapView class];
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];

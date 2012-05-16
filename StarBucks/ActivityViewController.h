@@ -14,7 +14,7 @@
 @interface ActivityViewController : UIViewController
 <PagePhotosDataSource,ActivityDelegate>{
     UITableView *__weak m_tableView;
-    UISegmentedControl *__weak segment;
+    UISegmentedControl * segment;
     
     PagePhotosView *m_pagePhotosView;
     
@@ -23,7 +23,7 @@
 }
 
 @property(nonatomic,weak) IBOutlet UITableView *m_tableView;
-@property(nonatomic,weak) IBOutlet UISegmentedControl *segment;
+@property(nonatomic,strong)  UISegmentedControl *segment;
 @property(nonatomic,strong) PagePhotosView *m_pagePhotosView;
 
 -(void) clickedImage:(UIButton*)bt;

@@ -13,6 +13,7 @@
 <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>{
     UITableView *__weak m_tableView;
     NSMutableArray *arrCommodity;
+    NSArray *arrBuied;
 //    CellForShoppingCartViewController *m_Cell;
     UIButton *btDelete;
     UIImageView *imageCommodity;
@@ -21,11 +22,14 @@
     UILabel *nameCommodity;
     NSArray *arrPickerData;
     UIButton *btHome;
+    UISegmentedControl *segmented;
+
 //    id  <UITextFieldDelegate> __weak textFieldDelegate;
 
 }
 @property(nonatomic,weak) IBOutlet UITableView *m_tableView;
 @property(nonatomic,strong) NSMutableArray *arrCommodity;
+@property(nonatomic,strong) NSArray *arrBuied;
 //@property(nonatomic,strong) CellForShoppingCartViewController *m_Cell;
 @property(nonatomic,strong) UIImageView *imageCommodity;
 @property(nonatomic,strong) UIButton *btDelete;
@@ -34,6 +38,7 @@
 @property(nonatomic,strong) UILabel *nameCommodity;
 @property(nonatomic,strong) NSArray *arrPickerData;
 @property(nonatomic,strong) UIButton *btHome;
+@property(nonatomic,strong) UISegmentedControl *segmented;
 //@property(nonatomic,weak) id <UITextFieldDelegate> textFieldDelegate;
 
 @end

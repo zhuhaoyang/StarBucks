@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BMapKit.h"
 
 @class ViewController;
 
