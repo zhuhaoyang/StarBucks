@@ -132,6 +132,7 @@
 		688EBA5E156358F6002D3325 /* starbucks_52.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5D156358F6002D3325 /* starbucks_52.png */; };
 		688FF72C15635D5E00EFC48D /* starbucks_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 688FF72B15635D5E00EFC48D /* starbucks_50.png */; };
 		688FF72F15635D7300EFC48D /* starbucks_51.png in Resources */ = {isa = PBXBuildFile; fileRef = 688FF72E15635D7300EFC48D /* starbucks_51.png */; };
+		688FF73B156364A400EFC48D /* datePicker.png in Resources */ = {isa = PBXBuildFile; fileRef = 688FF73A156364A400EFC48D /* datePicker.png */; };
 		689216C81563431400145A04 /* starbucks_35.png in Resources */ = {isa = PBXBuildFile; fileRef = 689216B91563431400145A04 /* starbucks_35.png */; };
 		689216C91563431400145A04 /* starbucks_36.png in Resources */ = {isa = PBXBuildFile; fileRef = 689216BA1563431400145A04 /* starbucks_36.png */; };
 		689216CA1563431400145A04 /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 689216BB1563431400145A04 /* uncheck.png */; };
@@ -300,6 +301,7 @@
 		688EBA5D156358F6002D3325 /* starbucks_52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_52.png; sourceTree = "<group>"; };
 		688FF72B15635D5E00EFC48D /* starbucks_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_50.png; sourceTree = "<group>"; };
 		688FF72E15635D7300EFC48D /* starbucks_51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_51.png; sourceTree = "<group>"; };
+		688FF73A156364A400EFC48D /* datePicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = datePicker.png; sourceTree = "<group>"; };
 		689216B91563431400145A04 /* starbucks_35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_35.png; sourceTree = "<group>"; };
 		689216BA1563431400145A04 /* starbucks_36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_36.png; sourceTree = "<group>"; };
 		689216BB1563431400145A04 /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
@@ -422,9 +424,9 @@
 		6824E40415626D6E00732048 /* Buy */ = {
 			isa = PBXGroup;
 			children = (
-				689216E11563545000145A04 /* BuyViewController.xib */,
-				6824E4B71562862D00732048 /* BuyViewController.m */,
 				6824E40D15626E6100732048 /* BuyViewController.h */,
+				6824E4B71562862D00732048 /* BuyViewController.m */,
+				689216E11563545000145A04 /* BuyViewController.xib */,
 			);
 			name = Buy;
 			sourceTree = "<group>";
@@ -530,6 +532,7 @@
 		6824E43C15626EC300732048 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				688FF73A156364A400EFC48D /* datePicker.png */,
 				688FF72E15635D7300EFC48D /* starbucks_51.png */,
 				688FF72B15635D5E00EFC48D /* starbucks_50.png */,
 				6824E4F215628A9200732048 /* qklmf.png */,
@@ -787,6 +790,7 @@
 				688EBA5E156358F6002D3325 /* starbucks_52.png in Resources */,
 				688FF72C15635D5E00EFC48D /* starbucks_50.png in Resources */,
 				688FF72F15635D7300EFC48D /* starbucks_51.png in Resources */,
+				688FF73B156364A400EFC48D /* datePicker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

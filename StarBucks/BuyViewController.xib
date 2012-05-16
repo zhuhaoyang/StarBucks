@@ -515,7 +515,7 @@
 								<string key="NSFrame">{{110, 281}, {96, 43}}</string>
 								<reference key="NSSuperview" ref="645612700"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="379990315"/>
+								<reference key="NSNextKeyView" ref="918215353"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -533,34 +533,6 @@
 								</object>
 								<reference key="IBUIFontDescription" ref="324172744"/>
 								<reference key="IBUIFont" ref="919061870"/>
-							</object>
-							<object class="IBUITextView" id="379990315">
-								<reference key="NSNextResponder" ref="645612700"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{208, 277}, {106, 43}}</string>
-								<reference key="NSSuperview" ref="645612700"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="525025672"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<reference key="IBUIBackgroundColor" ref="457917520"/>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<bool key="IBUIMultipleTouchEnabled">YES</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">2012/5/15                             10:40</string>
-								<int key="IBUITextAlignment">1</int>
-								<object class="IBUITextInputTraits" key="IBUITextInputTraits">
-									<int key="IBUIAutocapitalizationType">2</int>
-									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								</object>
-								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<int key="type">1</int>
-									<double key="pointSize">14</double>
-								</object>
-								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Helvetica</string>
-									<double key="NSSize">14</double>
-									<int key="NSfFlags">16</int>
-								</object>
 							</object>
 							<object class="IBUIButton" id="525025672">
 								<reference key="NSNextResponder" ref="645612700"/>
@@ -637,6 +609,21 @@
 								<reference key="IBUIFontDescription" ref="324172744"/>
 								<reference key="IBUIFont" ref="919061870"/>
 							</object>
+							<object class="IBUIImageView" id="918215353">
+								<reference key="NSNextResponder" ref="645612700"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{206, 281}, {108, 43}}</string>
+								<reference key="NSSuperview" ref="645612700"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="379990315"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">datePicker.png</string>
+								</object>
+							</object>
 							<object class="IBUIButton" id="61157129">
 								<reference key="NSNextResponder" ref="645612700"/>
 								<int key="NSvFlags">292</int>
@@ -687,6 +674,29 @@
 								<reference key="IBUIFontDescription" ref="324172744"/>
 								<reference key="IBUIFont" ref="919061870"/>
 							</object>
+							<object class="IBUITextView" id="379990315">
+								<reference key="NSNextResponder" ref="645612700"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{206, 282}, {105, 40}}</string>
+								<reference key="NSSuperview" ref="645612700"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="525025672"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<reference key="IBUIBackgroundColor" ref="457917520"/>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<bool key="IBUIMultipleTouchEnabled">YES</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<bool key="IBUIScrollEnabled">NO</bool>
+								<bool key="IBUIEditable">NO</bool>
+								<string key="IBUIText">2012/5/15                             10:40</string>
+								<int key="IBUITextAlignment">1</int>
+								<object class="IBUITextInputTraits" key="IBUITextInputTraits">
+									<int key="IBUIAutocapitalizationType">2</int>
+									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								</object>
+								<reference key="IBUIFontDescription" ref="532048894"/>
+								<reference key="IBUIFont" ref="1045355710"/>
+							</object>
 						</array>
 						<string key="NSFrameSize">{320, 416}</string>
 						<reference key="NSSuperview" ref="191373211"/>
@@ -736,9 +746,17 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">btShoppingCart</string>
 						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="525025672"/>
+					</object>
+					<int key="connectionID">156</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btBuy</string>
+						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="690025283"/>
 					</object>
-					<int key="connectionID">151</int>
+					<int key="connectionID">157</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -751,11 +769,20 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">shoppingCart</string>
+						<reference key="source" ref="525025672"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">155</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">buy</string>
 						<reference key="source" ref="690025283"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">149</int>
+					<int key="connectionID">158</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -802,9 +829,7 @@
 							<reference ref="981873176"/>
 							<reference ref="62554476"/>
 							<reference ref="179151009"/>
-							<reference ref="524614361"/>
 							<reference ref="475060328"/>
-							<reference ref="379990315"/>
 							<reference ref="690025283"/>
 							<reference ref="525025672"/>
 							<reference ref="61157129"/>
@@ -814,6 +839,9 @@
 							<reference ref="579505100"/>
 							<reference ref="545540788"/>
 							<reference ref="309885830"/>
+							<reference ref="524614361"/>
+							<reference ref="918215353"/>
+							<reference ref="379990315"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -942,6 +970,11 @@
 						<reference key="object" ref="213872547"/>
 						<reference key="parent" ref="645612700"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">159</int>
+						<reference key="object" ref="918215353"/>
+						<reference key="parent" ref="645612700"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -975,35 +1008,44 @@
 				<string key="144.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="145.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="146.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="159.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="99.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">151</int>
+			<int key="maxID">159</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">BuyViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">shoppingCart</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">shoppingCart</string>
-						<object class="IBActionInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="buy">id</string>
+						<string key="shoppingCart">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="buy">
+							<string key="name">buy</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="shoppingCart">
 							<string key="name">shoppingCart</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="btBuy">UIButton</string>
 						<string key="btShoppingCart">UIButton</string>
 						<string key="m_ScrollView">UIScrollView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="btBuy">
+							<string key="name">btBuy</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="btShoppingCart">
 							<string key="name">btShoppingCart</string>
 							<string key="candidateClassName">UIButton</string>
@@ -1032,6 +1074,7 @@
 			<string key="-.png">{30, 30}</string>
 			<string key="42.png">{204, 84}</string>
 			<string key="checked.png">{40, 40}</string>
+			<string key="datePicker.png">{199, 84}</string>
 			<string key="starbucks_20.png">{150, 80}</string>
 			<string key="starbucks_21.png">{150, 80}</string>
 			<string key="starbucks_22.png">{150, 80}</string>

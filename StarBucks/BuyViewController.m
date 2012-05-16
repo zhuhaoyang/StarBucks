@@ -15,6 +15,7 @@
 @implementation BuyViewController
 @synthesize m_ScrollView = _m_ScrollView;
 @synthesize btShoppingCart = _btShoppingCart;
+@synthesize btBuy = _btBuy;
 @synthesize m_ShoppingCartViewController = _m_ShoppingCartViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -61,10 +62,21 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (IBAction)shoppingCart
+- (IBAction)buy
 {
     m_ShoppingCartViewController = [[ShoppingCartViewController alloc]initWithNibName:@"ShoppingCartViewController" bundle:[NSBundle mainBundle]];
     [self.navigationController pushViewController:m_ShoppingCartViewController animated:YES];
+}
+
+- (IBAction)shoppingCart
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"信息" 
+                                                        message:@"成功加入购物车!" 
+                                                       delegate:nil 
+                                              cancelButtonTitle:@"确定" 
+                                              otherButtonTitles:nil];
+    [alertView show];
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

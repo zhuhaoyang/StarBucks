@@ -18,7 +18,9 @@
 
 @property(nonatomic,weak) IBOutlet UIScrollView *m_ScrollView;
 @property(nonatomic,weak) IBOutlet UIButton *btShoppingCart;
+@property(nonatomic,weak) IBOutlet UIButton *btBuy;
 @property(nonatomic,strong) ShoppingCartViewController *m_ShoppingCartViewController;
 
 - (IBAction)shoppingCart;
+- (IBAction)buy;
 @end

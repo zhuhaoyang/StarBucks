@@ -270,7 +270,12 @@
 
 - (void)pay
 {
-    NSLog(@"pay!");
+    UIAlertView *aler = [[UIAlertView alloc]initWithTitle:@"信息"
+                                                  message:@"结算成功!"
+                                                 delegate:self 
+                                        cancelButtonTitle:@"确认" 
+                                        otherButtonTitles: nil];
+    [aler show];
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
