@@ -13,18 +13,11 @@
 		6824E3DC15626D4C00732048 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6824E3DB15626D4C00732048 /* main.m */; };
 		6824E3E015626D4C00732048 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6824E3DF15626D4C00732048 /* AppDelegate.m */; };
 		6824E3E315626D4C00732048 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6824E3E215626D4C00732048 /* ViewController.m */; };
-		6824E3E615626D4C00732048 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6824E3E415626D4C00732048 /* ViewController.xib */; };
 		6824E3EF15626D4C00732048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6824E3CF15626D4C00732048 /* UIKit.framework */; };
 		6824E3F015626D4C00732048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6824E3D115626D4C00732048 /* Foundation.framework */; };
 		6824E3F815626D4C00732048 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6824E3F615626D4C00732048 /* InfoPlist.strings */; };
 		6824E3FB15626D4C00732048 /* StarBucksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6824E3FA15626D4C00732048 /* StarBucksTests.m */; };
-		6824E41615626E6D00732048 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6824E41415626E6D00732048 /* SettingViewController.xib */; };
-		6824E41B15626E7700732048 /* SBClubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6824E41915626E7700732048 /* SBClubViewController.xib */; };
-		6824E42015626E8200732048 /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6824E41E15626E8200732048 /* ShoppingCartViewController.xib */; };
 		6824E42615626E8E00732048 /* NSDictionary-DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6824E42215626E8E00732048 /* NSDictionary-DeepMutableCopy.m */; };
-		6824E42815626E8E00732048 /* DrinkAndFoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6824E42515626E8E00732048 /* DrinkAndFoodViewController.xib */; };
-		6824E43615626EA700732048 /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6824E43315626EA700732048 /* ActivityViewController.xib */; };
-		6824E43B15626EAE00732048 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6824E43915626EAE00732048 /* HomePageViewController.xib */; };
 		6824E46E15626ECC00732048 /* shopSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 6824E43D15626ECC00732048 /* shopSearch.png */; };
 		6824E46F15626ECC00732048 /* donebutto@2x7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6824E43E15626ECC00732048 /* donebutto@2x7.png */; };
 		6824E47015626ECC00732048 /* donebutto@2x6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6824E43F15626ECC00732048 /* donebutto@2x6.png */; };
@@ -91,7 +84,6 @@
 		6824E52D15628C2000732048 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6824E52B15628C2000732048 /* libbaidumapapi.a */; };
 		6824E52E15628C2000732048 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6824E52C15628C2000732048 /* mapapi.bundle */; };
 		6824E53215628C8D00732048 /* BaiduMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6824E53015628C8C00732048 /* BaiduMapViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6824E53315628C8D00732048 /* BaiduMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6824E53115628C8C00732048 /* BaiduMapViewController.xib */; };
 		6824E53515628D4700732048 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6824E53415628D4700732048 /* CoreLocation.framework */; };
 		6824E53A15628EA700732048 /* MapPointAnnotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6824E53915628EA700732048 /* MapPointAnnotion.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6824E53B1562939000732048 /* libbaidumapapi.a in Sources */ = {isa = PBXBuildFile; fileRef = 6824E52B15628C2000732048 /* libbaidumapapi.a */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -125,7 +117,6 @@
 		6824E5571562940C00732048 /* BMKUserLocation.h in Sources */ = {isa = PBXBuildFile; fileRef = 6824E52915628C1600732048 /* BMKUserLocation.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6824E5581562940C00732048 /* BMKVersion.h in Sources */ = {isa = PBXBuildFile; fileRef = 6824E52A15628C1600732048 /* BMKVersion.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6824E5591562940C00732048 /* BaiduMapViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 6824E52F15628C8C00732048 /* BaiduMapViewController.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6824E55A1562940C00732048 /* BaiduMapViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6824E53115628C8C00732048 /* BaiduMapViewController.xib */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6824E55B1562940C00732048 /* MapPointAnnotion.h in Sources */ = {isa = PBXBuildFile; fileRef = 6824E53615628D6500732048 /* MapPointAnnotion.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		688EBA5A15635732002D3325 /* starbucks_42.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5915635732002D3325 /* starbucks_42.png */; };
 		688EBA5C156357FE002D3325 /* 42.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5B156357FE002D3325 /* 42.png */; };
@@ -133,6 +124,15 @@
 		688FF72C15635D5E00EFC48D /* starbucks_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 688FF72B15635D5E00EFC48D /* starbucks_50.png */; };
 		688FF72F15635D7300EFC48D /* starbucks_51.png in Resources */ = {isa = PBXBuildFile; fileRef = 688FF72E15635D7300EFC48D /* starbucks_51.png */; };
 		688FF73B156364A400EFC48D /* datePicker.png in Resources */ = {isa = PBXBuildFile; fileRef = 688FF73A156364A400EFC48D /* datePicker.png */; };
+		688FF741156387B800EFC48D /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF740156387B800EFC48D /* HomePageViewController.xib */; };
+		688FF743156387DA00EFC48D /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF742156387DA00EFC48D /* ActivityViewController.xib */; };
+		688FF745156387E900EFC48D /* BaiduMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF744156387E900EFC48D /* BaiduMapViewController.xib */; };
+		688FF747156387FA00EFC48D /* DrinkAndFoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF746156387FA00EFC48D /* DrinkAndFoodViewController.xib */; };
+		688FF7491563880900EFC48D /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF7481563880900EFC48D /* ShoppingCartViewController.xib */; };
+		688FF74B1563881A00EFC48D /* SBClubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF74A1563881A00EFC48D /* SBClubViewController.xib */; };
+		688FF74D1563882700EFC48D /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF74C1563882700EFC48D /* SettingViewController.xib */; };
+		688FF74F1563883900EFC48D /* BuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF74E1563883900EFC48D /* BuyViewController.xib */; };
+		688FF7521563886E00EFC48D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF7501563886E00EFC48D /* ViewController.xib */; };
 		689216C81563431400145A04 /* starbucks_35.png in Resources */ = {isa = PBXBuildFile; fileRef = 689216B91563431400145A04 /* starbucks_35.png */; };
 		689216C91563431400145A04 /* starbucks_36.png in Resources */ = {isa = PBXBuildFile; fileRef = 689216BA1563431400145A04 /* starbucks_36.png */; };
 		689216CA1563431400145A04 /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 689216BB1563431400145A04 /* uncheck.png */; };
@@ -147,7 +147,6 @@
 		689216D41563431400145A04 /* starbucks_47.png in Resources */ = {isa = PBXBuildFile; fileRef = 689216C51563431400145A04 /* starbucks_47.png */; };
 		689216D51563431400145A04 /* starbucks_48.png in Resources */ = {isa = PBXBuildFile; fileRef = 689216C61563431400145A04 /* starbucks_48.png */; };
 		689216D61563431400145A04 /* starbucks_49.png in Resources */ = {isa = PBXBuildFile; fileRef = 689216C71563431400145A04 /* starbucks_49.png */; };
-		689216E21563545000145A04 /* BuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689216E11563545000145A04 /* BuyViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,7 +171,6 @@
 		6824E3DF15626D4C00732048 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6824E3E115626D4C00732048 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6824E3E215626D4C00732048 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6824E3E515626D4C00732048 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		6824E3EC15626D4C00732048 /* StarBucksTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarBucksTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6824E3F515626D4C00732048 /* StarBucksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StarBucksTests-Info.plist"; sourceTree = "<group>"; };
 		6824E3F715626D4C00732048 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -180,22 +178,16 @@
 		6824E3FA15626D4C00732048 /* StarBucksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarBucksTests.m; sourceTree = "<group>"; };
 		6824E40D15626E6100732048 /* BuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyViewController.h; sourceTree = "<group>"; };
 		6824E41215626E6D00732048 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		6824E41415626E6D00732048 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		6824E41715626E7700732048 /* SBClubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBClubViewController.h; sourceTree = "<group>"; };
-		6824E41915626E7700732048 /* SBClubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBClubViewController.xib; sourceTree = "<group>"; };
 		6824E41C15626E8200732048 /* ShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
-		6824E41E15626E8200732048 /* ShoppingCartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCartViewController.xib; sourceTree = "<group>"; };
 		6824E42115626E8E00732048 /* NSDictionary-DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-DeepMutableCopy.h"; sourceTree = "<group>"; };
 		6824E42215626E8E00732048 /* NSDictionary-DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary-DeepMutableCopy.m"; sourceTree = "<group>"; };
 		6824E42315626E8E00732048 /* DrinkAndFoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkAndFoodViewController.h; sourceTree = "<group>"; };
-		6824E42515626E8E00732048 /* DrinkAndFoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrinkAndFoodViewController.xib; sourceTree = "<group>"; };
 		6824E42915626E9F00732048 /* GoogleMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMapViewController.h; sourceTree = "<group>"; };
 		6824E42E15626EA700732048 /* PagePhotosDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagePhotosDataSource.h; sourceTree = "<group>"; };
 		6824E42F15626EA700732048 /* PagePhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagePhotosView.h; sourceTree = "<group>"; };
 		6824E43115626EA700732048 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
-		6824E43315626EA700732048 /* ActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
 		6824E43715626EAE00732048 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
-		6824E43915626EAE00732048 /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 		6824E43D15626ECC00732048 /* shopSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopSearch.png; sourceTree = "<group>"; };
 		6824E43E15626ECC00732048 /* donebutto@2x7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donebutto@2x7.png"; sourceTree = "<group>"; };
 		6824E43F15626ECC00732048 /* donebutto@2x6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donebutto@2x6.png"; sourceTree = "<group>"; };
@@ -292,7 +284,6 @@
 		6824E52C15628C2000732048 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		6824E52F15628C8C00732048 /* BaiduMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
 		6824E53015628C8C00732048 /* BaiduMapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaiduMapViewController.mm; sourceTree = "<group>"; };
-		6824E53115628C8C00732048 /* BaiduMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduMapViewController.xib; sourceTree = "<group>"; };
 		6824E53415628D4700732048 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6824E53615628D6500732048 /* MapPointAnnotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPointAnnotion.h; sourceTree = "<group>"; };
 		6824E53915628EA700732048 /* MapPointAnnotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPointAnnotion.m; sourceTree = "<group>"; };
@@ -302,6 +293,15 @@
 		688FF72B15635D5E00EFC48D /* starbucks_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_50.png; sourceTree = "<group>"; };
 		688FF72E15635D7300EFC48D /* starbucks_51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_51.png; sourceTree = "<group>"; };
 		688FF73A156364A400EFC48D /* datePicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = datePicker.png; sourceTree = "<group>"; };
+		688FF740156387B800EFC48D /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		688FF742156387DA00EFC48D /* ActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
+		688FF744156387E900EFC48D /* BaiduMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduMapViewController.xib; sourceTree = "<group>"; };
+		688FF746156387FA00EFC48D /* DrinkAndFoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrinkAndFoodViewController.xib; sourceTree = "<group>"; };
+		688FF7481563880900EFC48D /* ShoppingCartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCartViewController.xib; sourceTree = "<group>"; };
+		688FF74A1563881A00EFC48D /* SBClubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBClubViewController.xib; sourceTree = "<group>"; };
+		688FF74C1563882700EFC48D /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		688FF74E1563883900EFC48D /* BuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyViewController.xib; sourceTree = "<group>"; };
+		688FF7511563886E00EFC48D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		689216B91563431400145A04 /* starbucks_35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_35.png; sourceTree = "<group>"; };
 		689216BA1563431400145A04 /* starbucks_36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_36.png; sourceTree = "<group>"; };
 		689216BB1563431400145A04 /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
@@ -316,7 +316,6 @@
 		689216C51563431400145A04 /* starbucks_47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_47.png; sourceTree = "<group>"; };
 		689216C61563431400145A04 /* starbucks_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_48.png; sourceTree = "<group>"; };
 		689216C71563431400145A04 /* starbucks_49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_49.png; sourceTree = "<group>"; };
-		689216E11563545000145A04 /* BuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -426,7 +425,7 @@
 			children = (
 				6824E40D15626E6100732048 /* BuyViewController.h */,
 				6824E4B71562862D00732048 /* BuyViewController.m */,
-				689216E11563545000145A04 /* BuyViewController.xib */,
+				688FF74E1563883900EFC48D /* BuyViewController.xib */,
 			);
 			name = Buy;
 			sourceTree = "<group>";
@@ -436,7 +435,7 @@
 			children = (
 				6824E4B3156285EB00732048 /* SettingViewController.m */,
 				6824E41215626E6D00732048 /* SettingViewController.h */,
-				6824E41415626E6D00732048 /* SettingViewController.xib */,
+				688FF74C1563882700EFC48D /* SettingViewController.xib */,
 			);
 			name = Setting;
 			sourceTree = "<group>";
@@ -446,7 +445,7 @@
 			children = (
 				6824E4B1156285DF00732048 /* SBClubViewController.m */,
 				6824E41715626E7700732048 /* SBClubViewController.h */,
-				6824E41915626E7700732048 /* SBClubViewController.xib */,
+				688FF74A1563881A00EFC48D /* SBClubViewController.xib */,
 			);
 			name = SBClub;
 			sourceTree = "<group>";
@@ -456,7 +455,7 @@
 			children = (
 				6824E41C15626E8200732048 /* ShoppingCartViewController.h */,
 				6824E4AF156285C700732048 /* ShoppingCartViewController.m */,
-				6824E41E15626E8200732048 /* ShoppingCartViewController.xib */,
+				688FF7481563880900EFC48D /* ShoppingCartViewController.xib */,
 			);
 			name = ShoppingCart;
 			sourceTree = "<group>";
@@ -468,7 +467,7 @@
 				6824E42215626E8E00732048 /* NSDictionary-DeepMutableCopy.m */,
 				6824E42315626E8E00732048 /* DrinkAndFoodViewController.h */,
 				6824E4AD156285B800732048 /* DrinkAndFoodViewController.m */,
-				6824E42515626E8E00732048 /* DrinkAndFoodViewController.xib */,
+				688FF746156387FA00EFC48D /* DrinkAndFoodViewController.xib */,
 			);
 			name = DrinkAndFood;
 			sourceTree = "<group>";
@@ -481,7 +480,7 @@
 				6824E4B9156287D200732048 /* GoogleMapViewController.xib */,
 				6824E52F15628C8C00732048 /* BaiduMapViewController.h */,
 				6824E53015628C8C00732048 /* BaiduMapViewController.mm */,
-				6824E53115628C8C00732048 /* BaiduMapViewController.xib */,
+				688FF744156387E900EFC48D /* BaiduMapViewController.xib */,
 				6824E53615628D6500732048 /* MapPointAnnotion.h */,
 				6824E53915628EA700732048 /* MapPointAnnotion.m */,
 			);
@@ -491,12 +490,12 @@
 		6824E40A15626DB000732048 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				688FF742156387DA00EFC48D /* ActivityViewController.xib */,
 				6824E42E15626EA700732048 /* PagePhotosDataSource.h */,
 				6824E42F15626EA700732048 /* PagePhotosView.h */,
 				6824E4B51562861200732048 /* PagePhotosView.m */,
 				6824E43115626EA700732048 /* ActivityViewController.h */,
 				6824E4A91562857C00732048 /* ActivityViewController.m */,
-				6824E43315626EA700732048 /* ActivityViewController.xib */,
 			);
 			name = Activity;
 			sourceTree = "<group>";
@@ -506,7 +505,7 @@
 			children = (
 				6824E43715626EAE00732048 /* HomePageViewController.h */,
 				6824E4A71562856100732048 /* HomePageViewController.m */,
-				6824E43915626EAE00732048 /* HomePageViewController.xib */,
+				688FF740156387B800EFC48D /* HomePageViewController.xib */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -524,7 +523,7 @@
 				6824E40415626D6E00732048 /* Buy */,
 				6824E3E115626D4C00732048 /* ViewController.h */,
 				6824E3E215626D4C00732048 /* ViewController.m */,
-				6824E3E415626D4C00732048 /* ViewController.xib */,
+				688FF7501563886E00EFC48D /* ViewController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -716,7 +715,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6824E3DA15626D4C00732048 /* InfoPlist.strings in Resources */,
-				6824E3E615626D4C00732048 /* ViewController.xib in Resources */,
 				6824E46E15626ECC00732048 /* shopSearch.png in Resources */,
 				6824E46F15626ECC00732048 /* donebutto@2x7.png in Resources */,
 				6824E47015626ECC00732048 /* donebutto@2x6.png in Resources */,
@@ -769,7 +767,6 @@
 				6824E4BA156287D300732048 /* GoogleMapViewController.xib in Resources */,
 				6824E4F315628A9200732048 /* qklmf.png in Resources */,
 				6824E52E15628C2000732048 /* mapapi.bundle in Resources */,
-				6824E53315628C8D00732048 /* BaiduMapViewController.xib in Resources */,
 				689216C81563431400145A04 /* starbucks_35.png in Resources */,
 				689216C91563431400145A04 /* starbucks_36.png in Resources */,
 				689216CA1563431400145A04 /* uncheck.png in Resources */,
@@ -784,13 +781,21 @@
 				689216D41563431400145A04 /* starbucks_47.png in Resources */,
 				689216D51563431400145A04 /* starbucks_48.png in Resources */,
 				689216D61563431400145A04 /* starbucks_49.png in Resources */,
-				689216E21563545000145A04 /* BuyViewController.xib in Resources */,
 				688EBA5A15635732002D3325 /* starbucks_42.png in Resources */,
 				688EBA5C156357FE002D3325 /* 42.png in Resources */,
 				688EBA5E156358F6002D3325 /* starbucks_52.png in Resources */,
 				688FF72C15635D5E00EFC48D /* starbucks_50.png in Resources */,
 				688FF72F15635D7300EFC48D /* starbucks_51.png in Resources */,
 				688FF73B156364A400EFC48D /* datePicker.png in Resources */,
+				688FF741156387B800EFC48D /* HomePageViewController.xib in Resources */,
+				688FF743156387DA00EFC48D /* ActivityViewController.xib in Resources */,
+				688FF745156387E900EFC48D /* BaiduMapViewController.xib in Resources */,
+				688FF747156387FA00EFC48D /* DrinkAndFoodViewController.xib in Resources */,
+				688FF7491563880900EFC48D /* ShoppingCartViewController.xib in Resources */,
+				688FF74B1563881A00EFC48D /* SBClubViewController.xib in Resources */,
+				688FF74D1563882700EFC48D /* SettingViewController.xib in Resources */,
+				688FF74F1563883900EFC48D /* BuyViewController.xib in Resources */,
+				688FF7521563886E00EFC48D /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,12 +804,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6824E3F815626D4C00732048 /* InfoPlist.strings in Resources */,
-				6824E41615626E6D00732048 /* SettingViewController.xib in Resources */,
-				6824E41B15626E7700732048 /* SBClubViewController.xib in Resources */,
-				6824E42015626E8200732048 /* ShoppingCartViewController.xib in Resources */,
-				6824E42815626E8E00732048 /* DrinkAndFoodViewController.xib in Resources */,
-				6824E43615626EA700732048 /* ActivityViewController.xib in Resources */,
-				6824E43B15626EAE00732048 /* HomePageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,7 +860,6 @@
 				6824E5571562940C00732048 /* BMKUserLocation.h in Sources */,
 				6824E5581562940C00732048 /* BMKVersion.h in Sources */,
 				6824E5591562940C00732048 /* BaiduMapViewController.h in Sources */,
-				6824E55A1562940C00732048 /* BaiduMapViewController.xib in Sources */,
 				6824E55B1562940C00732048 /* MapPointAnnotion.h in Sources */,
 				6824E53B1562939000732048 /* libbaidumapapi.a in Sources */,
 				6824E53215628C8D00732048 /* BaiduMapViewController.mm in Sources */,
@@ -909,20 +907,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6824E3E415626D4C00732048 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6824E3E515626D4C00732048 /* en */,
-			);
-			name = ViewController.xib;
-			sourceTree = "<group>";
-		};
 		6824E3F615626D4C00732048 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6824E3F715626D4C00732048 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		688FF7501563886E00EFC48D /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				688FF7511563886E00EFC48D /* en */,
+			);
+			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -934,7 +932,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haoyang Zhu (R2RSGND58Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Haoyang Zhu (R2RSGND58Z)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -949,6 +948,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "BC175BDC-6389-4FA2-874C-F248ABE58827";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BC175BDC-6389-4FA2-874C-F248ABE58827";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -959,7 +960,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haoyang Zhu (R2RSGND58Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Haoyang Zhu (R2RSGND58Z)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -968,6 +970,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "BC175BDC-6389-4FA2-874C-F248ABE58827";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BC175BDC-6389-4FA2-874C-F248ABE58827";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -984,6 +988,7 @@
 					"\"$(SRCROOT)/StarBucks\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -999,6 +1004,7 @@
 					"\"$(SRCROOT)/StarBucks\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

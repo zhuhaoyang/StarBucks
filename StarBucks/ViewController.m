@@ -21,17 +21,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self showMainView]; 
+//    [self showMainView]; 
     
-//    splashImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"startLoge"]];
-//    splashImageView.frame = CGRectMake(0, -20, 320, 480);
-//    
-//    [self.view addSubview: splashImageView];
-//    
-//    timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 
-//                                             target: self 
-//                                           selector: @selector(fadeScreen) 
-//                                           userInfo: nil repeats: NO];
+    splashImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"startLoge"]];
+    splashImageView.frame = CGRectMake(0, -20, 320, 480);
+    
+    [self.view addSubview: splashImageView];
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 
+                                             target: self 
+                                           selector: @selector(fadeScreen) 
+                                           userInfo: nil repeats: NO];
     
 }
 
