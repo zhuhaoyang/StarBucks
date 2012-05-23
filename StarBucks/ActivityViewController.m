@@ -31,6 +31,7 @@
     bigBt.frame = CGRectMake(160, 122.5, 1, 1);
 
     [bigBt addTarget:self action:@selector(reduce) forControlEvents:UIControlEventTouchUpInside];
+    bigBt.adjustsImageWhenHighlighted = NO;
     [self.view addSubview:bigBt];
 //    bigBt.tag = 2;
 
@@ -40,7 +41,7 @@
     [UIView setAnimationDelay:0.3];
     
 
-    bigBt.frame = CGRectMake(0, 0, 320, 460);
+    bigBt.frame = CGRectMake(0, 0, 321, 460);
     
     
     [UIView commitAnimations];

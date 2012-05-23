@@ -83,7 +83,7 @@
         view = [UIButton buttonWithType:UIButtonTypeCustom];
         [view setBackgroundImage:image forState:UIControlStateNormal];
         [view addTarget:self action:@selector(clicked:) forControlEvents:UIControlEventTouchUpInside];
-    
+        view.adjustsImageWhenHighlighted = NO;
         [imageViews replaceObjectAtIndex:page withObject:view];
     }
 	

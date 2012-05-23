@@ -25,8 +25,8 @@
 @synthesize m_ShoppingCartViewController = _m_ShoppingCartViewController;
 @synthesize m_SBClubViewController = _m_SBClubViewControllerl;
 @synthesize m_SettingViewController = _m_SettingViewController;
-//@synthesize m_GoogleMapViewController = _m_GoogleMapViewController;
-@synthesize m_BaiduMapViewController = _m_BaiduMapViewController;
+@synthesize m_GoogleMapViewController = _m_GoogleMapViewController;
+//@synthesize m_BaiduMapViewController = _m_BaiduMapViewController;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -71,36 +71,48 @@
 - (IBAction)clickBt1:(id)sender
 {
 
-    m_ActivityViewController = [[ActivityViewController alloc]initWithNibName:@"ActivityViewController" bundle:nil];
+    if (m_ActivityViewController == nil) {
+        m_ActivityViewController = [[ActivityViewController alloc]initWithNibName:@"ActivityViewController" bundle:nil];
+    }
     [self.navigationController pushViewController:m_ActivityViewController animated:YES];
     
 }
 
 - (IBAction)clickBt2:(id)sender
 {
-    m_BaiduMapViewController = [[BaiduMapViewController alloc]initWithNibName:@"BaiduMapViewController" bundle:nil];
-    [self.navigationController pushViewController:m_BaiduMapViewController animated:YES];
+    if (m_GoogleMapViewController == nil) {
+        m_GoogleMapViewController = [[GoogleMapViewController alloc]initWithNibName:@"GoogleMapViewController" bundle:nil];
+    }
+    [self.navigationController pushViewController:m_GoogleMapViewController animated:YES];
 }
 
 - (IBAction)clickBt3:(id)sender
 {
-    m_DrinkAndFoodViewController = [[DrinkAndFoodViewController alloc]initWithNibName:@"DrinkAndFoodViewController" bundle:nil];
+    if (m_DrinkAndFoodViewController == nil) {
+        m_DrinkAndFoodViewController = [[DrinkAndFoodViewController alloc]initWithNibName:@"DrinkAndFoodViewController" bundle:nil];
+    }
     [self.navigationController pushViewController:m_DrinkAndFoodViewController animated:YES];
 }
 
 - (IBAction)clickBt4:(id)sender
 {
-    m_ShoppingCartViewController = [[ShoppingCartViewController alloc]initWithNibName:@"ShoppingCartViewController" bundle:nil];
+    if (m_ShoppingCartViewController == nil) {
+        m_ShoppingCartViewController = [[ShoppingCartViewController alloc]initWithNibName:@"ShoppingCartViewController" bundle:nil];
+    }
     [self.navigationController pushViewController:m_ShoppingCartViewController animated:YES];}
 
 - (IBAction)clickBt5:(id)sender
 {
-    m_SBClubViewController = [[SBClubViewController alloc]initWithNibName:@"SBClubViewController" bundle:nil];
+    if (m_SBClubViewController == nil) {
+        m_SBClubViewController = [[SBClubViewController alloc]initWithNibName:@"SBClubViewController" bundle:nil];
+    }
     [self.navigationController pushViewController:m_SBClubViewController animated:YES];}
 
 - (IBAction)clickBt6:(id)sender
 {
-    m_SettingViewController = [[SettingViewController alloc]initWithNibName:@"SettingViewController" bundle:nil];
+    if (m_SettingViewController == nil) {
+        m_SettingViewController = [[SettingViewController alloc]initWithNibName:@"SettingViewController" bundle:nil];
+    }
     [self.navigationController pushViewController:m_SettingViewController animated:YES];}
 
 

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 //#import "CellForShoppingCartViewController.h"
+#import "SettleAccountsViewController.h"
 
 @interface ShoppingCartViewController : UIViewController
 <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>{
@@ -23,6 +24,8 @@
     NSArray *arrPickerData;
     UIButton *btHome;
     UISegmentedControl *segmented;
+    
+    SettleAccountsViewController *m_SettleAccountsViewController;
 
 //    id  <UITextFieldDelegate> __weak textFieldDelegate;
 
@@ -39,6 +42,7 @@
 @property(nonatomic,strong) NSArray *arrPickerData;
 @property(nonatomic,strong) UIButton *btHome;
 @property(nonatomic,strong) UISegmentedControl *segmented;
+@property(nonatomic,strong) SettleAccountsViewController *m_SettleAccountsViewController;
 //@property(nonatomic,weak) id <UITextFieldDelegate> textFieldDelegate;
 
 @end

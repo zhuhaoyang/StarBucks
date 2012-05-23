@@ -25,6 +25,7 @@
 @synthesize arrPickerData = _arrPickerData;
 @synthesize btHome = _btHome;
 @synthesize segmented = _segmented;
+@synthesize m_SettleAccountsViewController = _m_SettleAccountsViewController;
 //@synthesize textFieldDelegate = _textFieldDelegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -270,12 +271,8 @@
 
 - (void)pay
 {
-    UIAlertView *aler = [[UIAlertView alloc]initWithTitle:@"信息"
-                                                  message:@"结算成功!"
-                                                 delegate:self 
-                                        cancelButtonTitle:@"确认" 
-                                        otherButtonTitles: nil];
-    [aler show];
+    m_SettleAccountsViewController = [[SettleAccountsViewController alloc]initWithNibName:@"SettleAccountsViewController" bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:m_SettleAccountsViewController animated:YES];
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField

@@ -13,8 +13,8 @@
 #import "ShoppingCartViewController.h"
 #import "SBClubViewController.h"
 #import "SettingViewController.h"
-//#import "GoogleMapViewController.h"
-#import "BaiduMapViewController.h"
+#import "GoogleMapViewController.h"
+//#import "BaiduMapViewController.h"
 #import "BMapKit.h"
 
 @interface HomePageViewController : UIViewController{
@@ -30,8 +30,8 @@
     ShoppingCartViewController *m_ShoppingCartViewController;
     SBClubViewController *m_SBClubViewController;
     SettingViewController *m_SettingViewController;
-//    GoogleMapViewController *m_GoogleMapViewController;
-    BaiduMapViewController *m_BaiduMapViewController;
+    GoogleMapViewController *m_GoogleMapViewController;
+//    BaiduMapViewController *m_BaiduMapViewController;
 }
 
 @property(nonatomic,weak) IBOutlet UIButton *bt1;
@@ -46,8 +46,8 @@
 @property(nonatomic,strong) ShoppingCartViewController *m_ShoppingCartViewController;
 @property(nonatomic,strong) SBClubViewController *m_SBClubViewController;
 @property(nonatomic,strong) SettingViewController *m_SettingViewController;
-//@property(nonatomic,strong) GoogleMapViewController *m_GoogleMapViewController;
-@property(nonatomic,strong) BaiduMapViewController *m_BaiduMapViewController;
+@property(nonatomic,strong) GoogleMapViewController *m_GoogleMapViewController;
+//@property(nonatomic,strong) BaiduMapViewController *m_BaiduMapViewController;
 - (IBAction)clickBt1:(id)sender;
 - (IBAction)clickBt2:(id)sender;
 - (IBAction)clickBt3:(id)sender;
