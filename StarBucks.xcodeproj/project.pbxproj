@@ -503,7 +503,6 @@
 				6892015715662ACE0083A39D /* Service */,
 				6892014715660AC90083A39D /* Global */,
 				6892013915660A700083A39D /* FMDataBase */,
-				6824E50C15628C0B00732048 /* Map */,
 				6824E40C15626DD200732048 /* ViewController */,
 				6824E3DE15626D4C00732048 /* AppDelegate.h */,
 				6824E3DF15626D4C00732048 /* AppDelegate.m */,
@@ -732,13 +731,6 @@
 				6824E46D15626ECC00732048 /* ydhc.png */,
 			);
 			name = image;
-			sourceTree = "<group>";
-		};
-		6824E50C15628C0B00732048 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Map;
 			sourceTree = "<group>";
 		};
 		6892013915660A700083A39D /* FMDataBase */ = {
