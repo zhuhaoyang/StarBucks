@@ -17,6 +17,20 @@
 @synthesize btShoppingCart = _btShoppingCart;
 @synthesize btBuy = _btBuy;
 @synthesize m_ShoppingCartViewController = _m_ShoppingCartViewController;
+@synthesize m_GoogleMapViewController = _m_GoogleMapViewController;
+
+@synthesize btIce = _btIce;
+@synthesize btMilk = _btMilk;
+@synthesize btS = _btS;
+@synthesize btM = _btM;
+@synthesize btB = _btB;
+@synthesize btSB = _btSB;
+@synthesize btChooseStore = _btChooseStore;
+@synthesize btSelectTime = _btSelectTime;
+@synthesize btAdd = _btAdd;
+@synthesize btReduction = _btReduction;
+
+@synthesize numOfCoffee = _numOfCoffee;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -78,6 +92,90 @@
     [alertView show];
 
 }
+
+- (IBAction)ice:(id)sender
+{
+    if (self.btIce.tag == 0) {
+        self.btIce.tag = 1;
+        [self.btIce setImage:[UIImage imageNamed:@"checked"] forState:UIControlStateNormal];
+    }else if(self.btIce.tag == 1){
+        self.btIce.tag = 0;
+        [self.btIce setImage:[UIImage imageNamed:@"uncheck"] forState:UIControlStateNormal];
+    }
+}
+
+- (IBAction)milk:(id)sender
+{
+    if (self.btMilk.tag == 0) {
+        self.btMilk.tag = 1;
+        [self.btMilk setImage:[UIImage imageNamed:@"checked"] forState:UIControlStateNormal];
+    }else if(self.btMilk.tag == 1){
+        self.btMilk.tag = 0;
+        [self.btMilk setImage:[UIImage imageNamed:@"uncheck"] forState:UIControlStateNormal];
+    }
+}
+
+- (IBAction)SCup:(id)sender
+{
+    [self.btS setImage:[UIImage imageNamed:@"starbucks_30"] forState:UIControlStateNormal];
+    [self.btM setImage:[UIImage imageNamed:@"starbucks_21"] forState:UIControlStateNormal];
+    [self.btB setImage:[UIImage imageNamed:@"starbucks_22"] forState:UIControlStateNormal];
+    [self.btSB setImage:[UIImage imageNamed:@"starbucks_23"] forState:UIControlStateNormal];
+
+}
+
+- (IBAction)MCup:(id)sender
+{
+    [self.btS setImage:[UIImage imageNamed:@"starbucks_20"] forState:UIControlStateNormal];
+    [self.btM setImage:[UIImage imageNamed:@"starbucks_31"] forState:UIControlStateNormal];
+    [self.btB setImage:[UIImage imageNamed:@"starbucks_22"] forState:UIControlStateNormal];
+    [self.btSB setImage:[UIImage imageNamed:@"starbucks_23"] forState:UIControlStateNormal];
+}
+
+- (IBAction)BCup:(id)sender
+{
+    [self.btS setImage:[UIImage imageNamed:@"starbucks_20"] forState:UIControlStateNormal];
+    [self.btM setImage:[UIImage imageNamed:@"starbucks_21"] forState:UIControlStateNormal];
+    [self.btB setImage:[UIImage imageNamed:@"starbucks_32"] forState:UIControlStateNormal];
+    [self.btSB setImage:[UIImage imageNamed:@"starbucks_23"] forState:UIControlStateNormal];
+}
+
+- (IBAction)SBCup:(id)sender
+{
+    [self.btS setImage:[UIImage imageNamed:@"starbucks_20"] forState:UIControlStateNormal];
+    [self.btM setImage:[UIImage imageNamed:@"starbucks_21"] forState:UIControlStateNormal];
+    [self.btB setImage:[UIImage imageNamed:@"starbucks_22"] forState:UIControlStateNormal];
+    [self.btSB setImage:[UIImage imageNamed:@"starbucks_33"] forState:UIControlStateNormal];
+}
+
+- (IBAction)chooseStore:(id)sender
+{
+    if (m_GoogleMapViewController == nil) {
+        m_GoogleMapViewController = [[GoogleMapViewController alloc]initWithNibName:@"GoogleMapViewController" bundle:[NSBundle mainBundle]];
+    }
+    [self.navigationController pushViewController:m_GoogleMapViewController animated:YES];
+}
+
+- (IBAction)selectTime:(id)sender
+{
+
+}
+
+- (IBAction)add:(id)sender
+{
+    int n = [self.numOfCoffee.text intValue] + 1;
+    self.numOfCoffee.text = [NSString stringWithFormat:@"%i",n];
+}
+
+- (IBAction)reduction:(id)sender
+{
+    if ([self.numOfCoffee.text intValue] > 1) {
+        int n = [self.numOfCoffee.text intValue] - 1;
+        self.numOfCoffee.text = [NSString stringWithFormat:@"%i",n];
+    }
+
+}
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

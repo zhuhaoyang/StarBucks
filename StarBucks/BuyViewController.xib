@@ -145,7 +145,7 @@
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MC41AA</bytes>
 								</object>
-								<object class="NSCustomResource" key="IBUINormalImage">
+								<object class="NSCustomResource" key="IBUINormalImage" id="59650925">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">uncheck.png</string>
 								</object>
@@ -198,10 +198,7 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="703850366"/>
-								<object class="NSCustomResource" key="IBUINormalImage">
-									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">checked.png</string>
-								</object>
+								<reference key="IBUINormalImage" ref="59650925"/>
 								<reference key="IBUIFontDescription" ref="324172744"/>
 								<reference key="IBUIFont" ref="919061870"/>
 							</object>
@@ -655,7 +652,6 @@
 								<string key="NSFrame">{{211, 377}, {101, 29}}</string>
 								<reference key="NSSuperview" ref="645612700"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -760,11 +756,189 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btS</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="770562989"/>
+					</object>
+					<int key="connectionID">172</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btM</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="579505100"/>
+					</object>
+					<int key="connectionID">173</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btB</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="545540788"/>
+					</object>
+					<int key="connectionID">174</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btSB</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="309885830"/>
+					</object>
+					<int key="connectionID">175</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btMilk</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="181336121"/>
+					</object>
+					<int key="connectionID">176</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btIce</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="718453457"/>
+					</object>
+					<int key="connectionID">177</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btReduction</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="851921763"/>
+					</object>
+					<int key="connectionID">178</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btAdd</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="62554476"/>
+					</object>
+					<int key="connectionID">179</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btChooseStore</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="179151009"/>
+					</object>
+					<int key="connectionID">180</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btSelectTime</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="524614361"/>
+					</object>
+					<int key="connectionID">181</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">numOfCoffee</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="486276575"/>
+					</object>
+					<int key="connectionID">182</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
 						<reference key="source" ref="645612700"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">100</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">milk:</string>
+						<reference key="source" ref="181336121"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">166</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">ice:</string>
+						<reference key="source" ref="718453457"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">167</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">SCup:</string>
+						<reference key="source" ref="770562989"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">162</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">MCup:</string>
+						<reference key="source" ref="579505100"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">163</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">BCup:</string>
+						<reference key="source" ref="545540788"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">164</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">SBCup:</string>
+						<reference key="source" ref="309885830"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">165</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">reduction:</string>
+						<reference key="source" ref="851921763"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">170</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">add:</string>
+						<reference key="source" ref="62554476"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">171</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">chooseStore:</string>
+						<reference key="source" ref="179151009"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">168</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">selectTime:</string>
+						<reference key="source" ref="524614361"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">169</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -1015,7 +1189,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">159</int>
+			<int key="maxID">182</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1023,12 +1197,62 @@
 					<string key="className">BuyViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="BCup:">id</string>
+						<string key="MCup:">id</string>
+						<string key="SBCup:">id</string>
+						<string key="SCup:">id</string>
+						<string key="add:">id</string>
 						<string key="buy">id</string>
+						<string key="chooseStore:">id</string>
+						<string key="ice:">id</string>
+						<string key="milk:">id</string>
+						<string key="reduction:">id</string>
+						<string key="selectTime:">id</string>
 						<string key="shoppingCart">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="BCup:">
+							<string key="name">BCup:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="MCup:">
+							<string key="name">MCup:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="SBCup:">
+							<string key="name">SBCup:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="SCup:">
+							<string key="name">SCup:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="add:">
+							<string key="name">add:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="buy">
 							<string key="name">buy</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="chooseStore:">
+							<string key="name">chooseStore:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="ice:">
+							<string key="name">ice:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="milk:">
+							<string key="name">milk:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="reduction:">
+							<string key="name">reduction:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="selectTime:">
+							<string key="name">selectTime:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="shoppingCart">
@@ -1037,13 +1261,64 @@
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="btAdd">UIButton</string>
+						<string key="btB">UIButton</string>
 						<string key="btBuy">UIButton</string>
+						<string key="btChooseStore">UIButton</string>
+						<string key="btIce">UIButton</string>
+						<string key="btM">UIButton</string>
+						<string key="btMilk">UIButton</string>
+						<string key="btReduction">UIButton</string>
+						<string key="btS">UIButton</string>
+						<string key="btSB">UIButton</string>
+						<string key="btSelectTime">UIButton</string>
 						<string key="btShoppingCart">UIButton</string>
 						<string key="m_ScrollView">UIScrollView</string>
+						<string key="numOfCoffee">UITextField</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="btAdd">
+							<string key="name">btAdd</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="btB">
+							<string key="name">btB</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="btBuy">
 							<string key="name">btBuy</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="btChooseStore">
+							<string key="name">btChooseStore</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="btIce">
+							<string key="name">btIce</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="btM">
+							<string key="name">btM</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="btMilk">
+							<string key="name">btMilk</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="btReduction">
+							<string key="name">btReduction</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="btS">
+							<string key="name">btS</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="btSB">
+							<string key="name">btSB</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="btSelectTime">
+							<string key="name">btSelectTime</string>
 							<string key="candidateClassName">UIButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="btShoppingCart">
@@ -1053,6 +1328,10 @@
 						<object class="IBToOneOutletInfo" key="m_ScrollView">
 							<string key="name">m_ScrollView</string>
 							<string key="candidateClassName">UIScrollView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="numOfCoffee">
+							<string key="name">numOfCoffee</string>
+							<string key="candidateClassName">UITextField</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -1073,7 +1352,6 @@
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="-.png">{30, 30}</string>
 			<string key="42.png">{204, 84}</string>
-			<string key="checked.png">{40, 40}</string>
 			<string key="datePicker.png">{199, 84}</string>
 			<string key="starbucks_20.png">{150, 80}</string>
 			<string key="starbucks_21.png">{150, 80}</string>

@@ -17,15 +17,15 @@
 #define LOGS(msg1, ...)
 #endif
 
-//// Safe Release
-//#define SAFE_RELEASE(object)\
-//{\
-//if (nil != object)\
-//{\
-//[object release];\
-//object = nil;\
-//}\
-//}
+// Safe Release
+#define SAFE_RELEASE(object)\
+{\
+if (nil != object)\
+{\
+[object release];\
+object = nil;\
+}\
+}
 
 
 // Time out setting for Http engine

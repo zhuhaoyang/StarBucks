@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "serviceTest.h"
 
 @interface SettingViewController : UIViewController
+<serviceCallBackDelegate>{
+    UIButton *__weak btTest;
+    serviceTest *m_serviceTest;
+}
+
+@property(nonatomic,weak) IBOutlet UIButton *btTest;
+@property(nonatomic,strong) serviceTest *m_serviceTest;
+
+- (IBAction)test:(id)sender;
 
 @end
