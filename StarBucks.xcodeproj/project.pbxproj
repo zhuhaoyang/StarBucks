@@ -86,7 +86,6 @@
 		6824E53A15628EA700732048 /* MapPointAnnotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6824E53915628EA700732048 /* MapPointAnnotion.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6824E5591562940C00732048 /* BaiduMapViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 6824E52F15628C8C00732048 /* BaiduMapViewController.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6824E55B1562940C00732048 /* MapPointAnnotion.h in Sources */ = {isa = PBXBuildFile; fileRef = 6824E53615628D6500732048 /* MapPointAnnotion.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6828B177156E39AF003E5B2D /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6828B176156E39AF003E5B2D /* mapapi.bundle */; };
 		688EBA5A15635732002D3325 /* starbucks_42.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5915635732002D3325 /* starbucks_42.png */; };
 		688EBA5C156357FE002D3325 /* 42.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5B156357FE002D3325 /* 42.png */; };
 		688EBA5E156358F6002D3325 /* starbucks_52.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5D156358F6002D3325 /* starbucks_52.png */; };
@@ -306,7 +305,6 @@
 		6824E53415628D4700732048 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6824E53615628D6500732048 /* MapPointAnnotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPointAnnotion.h; sourceTree = "<group>"; };
 		6824E53915628EA700732048 /* MapPointAnnotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPointAnnotion.m; sourceTree = "<group>"; };
-		6828B176156E39AF003E5B2D /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		688EBA5915635732002D3325 /* starbucks_42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_42.png; sourceTree = "<group>"; };
 		688EBA5B156357FE002D3325 /* 42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 42.png; sourceTree = "<group>"; };
 		688EBA5D156358F6002D3325 /* starbucks_52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_52.png; sourceTree = "<group>"; };
@@ -739,7 +737,6 @@
 		6824E50C15628C0B00732048 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				6828B176156E39AF003E5B2D /* mapapi.bundle */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -997,7 +994,6 @@
 				688FF7521563886E00EFC48D /* ViewController.xib in Resources */,
 				6892ECBA1564F5A600EC6E3A /* SettleAccountsViewController.xib in Resources */,
 				688EF5EA156C8E570081C14C /* starbucks_001.png in Resources */,
-				6828B177156E39AF003E5B2D /* mapapi.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
