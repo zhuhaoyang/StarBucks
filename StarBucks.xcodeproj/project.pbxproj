@@ -81,11 +81,7 @@
 		6824E4B81562862D00732048 /* BuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6824E4B71562862D00732048 /* BuyViewController.m */; };
 		6824E4BA156287D300732048 /* GoogleMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6824E4B9156287D200732048 /* GoogleMapViewController.xib */; };
 		6824E4F315628A9200732048 /* qklmf.png in Resources */ = {isa = PBXBuildFile; fileRef = 6824E4F215628A9200732048 /* qklmf.png */; };
-		6824E53215628C8D00732048 /* BaiduMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6824E53015628C8C00732048 /* BaiduMapViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6824E53515628D4700732048 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6824E53415628D4700732048 /* CoreLocation.framework */; };
-		6824E53A15628EA700732048 /* MapPointAnnotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6824E53915628EA700732048 /* MapPointAnnotion.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6824E5591562940C00732048 /* BaiduMapViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 6824E52F15628C8C00732048 /* BaiduMapViewController.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6824E55B1562940C00732048 /* MapPointAnnotion.h in Sources */ = {isa = PBXBuildFile; fileRef = 6824E53615628D6500732048 /* MapPointAnnotion.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		688EBA5A15635732002D3325 /* starbucks_42.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5915635732002D3325 /* starbucks_42.png */; };
 		688EBA5C156357FE002D3325 /* 42.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5B156357FE002D3325 /* 42.png */; };
 		688EBA5E156358F6002D3325 /* starbucks_52.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5D156358F6002D3325 /* starbucks_52.png */; };
@@ -95,7 +91,6 @@
 		688FF73B156364A400EFC48D /* datePicker.png in Resources */ = {isa = PBXBuildFile; fileRef = 688FF73A156364A400EFC48D /* datePicker.png */; };
 		688FF741156387B800EFC48D /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF740156387B800EFC48D /* HomePageViewController.xib */; };
 		688FF743156387DA00EFC48D /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF742156387DA00EFC48D /* ActivityViewController.xib */; };
-		688FF745156387E900EFC48D /* BaiduMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF744156387E900EFC48D /* BaiduMapViewController.xib */; };
 		688FF747156387FA00EFC48D /* DrinkAndFoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF746156387FA00EFC48D /* DrinkAndFoodViewController.xib */; };
 		688FF7491563880900EFC48D /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF7481563880900EFC48D /* ShoppingCartViewController.xib */; };
 		688FF74B1563881A00EFC48D /* SBClubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688FF74A1563881A00EFC48D /* SBClubViewController.xib */; };
@@ -300,11 +295,7 @@
 		6824E4B71562862D00732048 /* BuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyViewController.m; sourceTree = "<group>"; };
 		6824E4B9156287D200732048 /* GoogleMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoogleMapViewController.xib; sourceTree = "<group>"; };
 		6824E4F215628A9200732048 /* qklmf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qklmf.png; sourceTree = "<group>"; };
-		6824E52F15628C8C00732048 /* BaiduMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
-		6824E53015628C8C00732048 /* BaiduMapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaiduMapViewController.mm; sourceTree = "<group>"; };
 		6824E53415628D4700732048 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		6824E53615628D6500732048 /* MapPointAnnotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPointAnnotion.h; sourceTree = "<group>"; };
-		6824E53915628EA700732048 /* MapPointAnnotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPointAnnotion.m; sourceTree = "<group>"; };
 		688EBA5915635732002D3325 /* starbucks_42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_42.png; sourceTree = "<group>"; };
 		688EBA5B156357FE002D3325 /* 42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 42.png; sourceTree = "<group>"; };
 		688EBA5D156358F6002D3325 /* starbucks_52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_52.png; sourceTree = "<group>"; };
@@ -314,7 +305,6 @@
 		688FF73A156364A400EFC48D /* datePicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = datePicker.png; sourceTree = "<group>"; };
 		688FF740156387B800EFC48D /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 		688FF742156387DA00EFC48D /* ActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
-		688FF744156387E900EFC48D /* BaiduMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduMapViewController.xib; sourceTree = "<group>"; };
 		688FF746156387FA00EFC48D /* DrinkAndFoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrinkAndFoodViewController.xib; sourceTree = "<group>"; };
 		688FF7481563880900EFC48D /* ShoppingCartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCartViewController.xib; sourceTree = "<group>"; };
 		688FF74A1563881A00EFC48D /* SBClubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBClubViewController.xib; sourceTree = "<group>"; };
@@ -605,11 +595,6 @@
 				6824E4B9156287D200732048 /* GoogleMapViewController.xib */,
 				68956165156A4002004C693E /* Annotation.h */,
 				68956166156A4003004C693E /* Annotation.m */,
-				6824E52F15628C8C00732048 /* BaiduMapViewController.h */,
-				6824E53015628C8C00732048 /* BaiduMapViewController.mm */,
-				688FF744156387E900EFC48D /* BaiduMapViewController.xib */,
-				6824E53615628D6500732048 /* MapPointAnnotion.h */,
-				6824E53915628EA700732048 /* MapPointAnnotion.m */,
 			);
 			name = ShopSearch;
 			sourceTree = "<group>";
@@ -977,7 +962,6 @@
 				688FF73B156364A400EFC48D /* datePicker.png in Resources */,
 				688FF741156387B800EFC48D /* HomePageViewController.xib in Resources */,
 				688FF743156387DA00EFC48D /* ActivityViewController.xib in Resources */,
-				688FF745156387E900EFC48D /* BaiduMapViewController.xib in Resources */,
 				688FF747156387FA00EFC48D /* DrinkAndFoodViewController.xib in Resources */,
 				688FF7491563880900EFC48D /* ShoppingCartViewController.xib in Resources */,
 				688FF74B1563881A00EFC48D /* SBClubViewController.xib in Resources */,
@@ -1056,10 +1040,6 @@
 				6892015215660C0F0083A39D /* FMDatabaseAdditions.m in Sources */,
 				6892015315660C0F0083A39D /* FMResultSet.h in Sources */,
 				6892015415660C0F0083A39D /* FMResultSet.m in Sources */,
-				6824E5591562940C00732048 /* BaiduMapViewController.h in Sources */,
-				6824E55B1562940C00732048 /* MapPointAnnotion.h in Sources */,
-				6824E53215628C8D00732048 /* BaiduMapViewController.mm in Sources */,
-				6824E53A15628EA700732048 /* MapPointAnnotion.m in Sources */,
 				6824E3DC15626D4C00732048 /* main.m in Sources */,
 				6824E3E015626D4C00732048 /* AppDelegate.m in Sources */,
 				6824E3E315626D4C00732048 /* ViewController.m in Sources */,
