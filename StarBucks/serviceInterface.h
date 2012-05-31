@@ -49,8 +49,8 @@ typedef enum  requestMode
 @property (nonatomic) TRequestMode m_requestMode;
 @property (nonatomic, strong) Error *m_error;
 @property (nonatomic,weak) id<serviceCallBackDelegate> delegate;
-
+@property (nonatomic,strong)NSMutableDictionary *m_dicReceiveData;
 //-(id)initWithDelegate:(id<serviceCallBackDelegate>)aDelegate 
 //		  requestMode:(TRequestMode)mode;
--(void)sendRequestWithData:(NSDictionary*)aDic addr:(NSString *)addr;
+-(void)sendRequestWithData:(NSString *)str addr:(NSString *)addr;
 @end

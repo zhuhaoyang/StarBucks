@@ -96,9 +96,8 @@
 
 - (IBAction)clickBt4:(id)sender
 {
-    if (m_ShoppingCartViewController == nil) {
-        m_ShoppingCartViewController = [[ShoppingCartViewController alloc]initWithNibName:@"ShoppingCartViewController" bundle:nil];
-    }
+    m_ShoppingCartViewController = nil;
+    m_ShoppingCartViewController = [[ShoppingCartViewController alloc]initWithNibName:@"ShoppingCartViewController" bundle:nil];
     [self.navigationController pushViewController:m_ShoppingCartViewController animated:YES];}
 
 - (IBAction)clickBt5:(id)sender

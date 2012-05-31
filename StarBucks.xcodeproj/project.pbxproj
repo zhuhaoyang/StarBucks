@@ -82,6 +82,8 @@
 		6824E4BA156287D300732048 /* GoogleMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6824E4B9156287D200732048 /* GoogleMapViewController.xib */; };
 		6824E4F315628A9200732048 /* qklmf.png in Resources */ = {isa = PBXBuildFile; fileRef = 6824E4F215628A9200732048 /* qklmf.png */; };
 		6824E53515628D4700732048 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6824E53415628D4700732048 /* CoreLocation.framework */; };
+		688B6327156F2E9D00D960A0 /* serviceAddOrderData.m in Sources */ = {isa = PBXBuildFile; fileRef = 688B6326156F2E9D00D960A0 /* serviceAddOrderData.m */; };
+		688B632B156F32C800D960A0 /* serviceGetOrderData.m in Sources */ = {isa = PBXBuildFile; fileRef = 688B632A156F32C800D960A0 /* serviceGetOrderData.m */; };
 		688EBA5A15635732002D3325 /* starbucks_42.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5915635732002D3325 /* starbucks_42.png */; };
 		688EBA5C156357FE002D3325 /* 42.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5B156357FE002D3325 /* 42.png */; };
 		688EBA5E156358F6002D3325 /* starbucks_52.png in Resources */ = {isa = PBXBuildFile; fileRef = 688EBA5D156358F6002D3325 /* starbucks_52.png */; };
@@ -191,6 +193,7 @@
 		68935A3E156DEFEA009CE672 /* serviceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 68935A3D156DEFEA009CE672 /* serviceTest.m */; };
 		6895615B156A12C7004C693E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6895615A156A12C7004C693E /* MapKit.framework */; };
 		68956167156A4003004C693E /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 68956166156A4003004C693E /* Annotation.m */; };
+		6898036A1574A39600C37175 /* serviceGetOneOrderData.m in Sources */ = {isa = PBXBuildFile; fileRef = 689803691574A39600C37175 /* serviceGetOneOrderData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,6 +299,10 @@
 		6824E4B9156287D200732048 /* GoogleMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoogleMapViewController.xib; sourceTree = "<group>"; };
 		6824E4F215628A9200732048 /* qklmf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qklmf.png; sourceTree = "<group>"; };
 		6824E53415628D4700732048 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		688B6325156F2E9D00D960A0 /* serviceAddOrderData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serviceAddOrderData.h; sourceTree = "<group>"; };
+		688B6326156F2E9D00D960A0 /* serviceAddOrderData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = serviceAddOrderData.m; sourceTree = "<group>"; };
+		688B6329156F32C800D960A0 /* serviceGetOrderData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serviceGetOrderData.h; sourceTree = "<group>"; };
+		688B632A156F32C800D960A0 /* serviceGetOrderData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = serviceGetOrderData.m; sourceTree = "<group>"; };
 		688EBA5915635732002D3325 /* starbucks_42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_42.png; sourceTree = "<group>"; };
 		688EBA5B156357FE002D3325 /* 42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 42.png; sourceTree = "<group>"; };
 		688EBA5D156358F6002D3325 /* starbucks_52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks_52.png; sourceTree = "<group>"; };
@@ -409,6 +416,8 @@
 		6895615A156A12C7004C693E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		68956165156A4002004C693E /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		68956166156A4003004C693E /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		689803681574A39600C37175 /* serviceGetOneOrderData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serviceGetOneOrderData.h; sourceTree = "<group>"; };
+		689803691574A39600C37175 /* serviceGetOneOrderData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = serviceGetOneOrderData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -748,13 +757,19 @@
 		6892015715662ACE0083A39D /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				6892024E15662FB90083A39D /* ASI_HTTP_REQUEST */,
 				68935A23156DE251009CE672 /* GDataXMLNode.h */,
 				68935A24156DE251009CE672 /* GDataXMLNode.m */,
 				68935A26156DE29B009CE672 /* serviceInterface.h */,
 				68935A27156DE29B009CE672 /* serviceInterface.m */,
 				68935A3C156DEFEA009CE672 /* serviceTest.h */,
 				68935A3D156DEFEA009CE672 /* serviceTest.m */,
+				688B6325156F2E9D00D960A0 /* serviceAddOrderData.h */,
+				688B6326156F2E9D00D960A0 /* serviceAddOrderData.m */,
+				688B6329156F32C800D960A0 /* serviceGetOrderData.h */,
+				688B632A156F32C800D960A0 /* serviceGetOrderData.m */,
+				689803681574A39600C37175 /* serviceGetOneOrderData.h */,
+				689803691574A39600C37175 /* serviceGetOneOrderData.m */,
+				6892024E15662FB90083A39D /* ASI_HTTP_REQUEST */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -1080,6 +1095,9 @@
 				68935A25156DE251009CE672 /* GDataXMLNode.m in Sources */,
 				68935A28156DE29B009CE672 /* serviceInterface.m in Sources */,
 				68935A3E156DEFEA009CE672 /* serviceTest.m in Sources */,
+				688B6327156F2E9D00D960A0 /* serviceAddOrderData.m in Sources */,
+				688B632B156F32C800D960A0 /* serviceGetOrderData.m in Sources */,
+				6898036A1574A39600C37175 /* serviceGetOneOrderData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

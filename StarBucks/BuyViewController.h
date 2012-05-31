@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "ShoppingCartViewController.h"
 #import "GoogleMapViewController.h"
+#import "Global.h"
 
-@interface BuyViewController : UIViewController<UIScrollViewDelegate>
-{
+@interface BuyViewController : UIViewController
+<UIScrollViewDelegate,serviceGetOrderDataCallBackDelegate>{
     UIScrollView *__weak m_ScrollView;
     UIButton *__weak btShoppingCart;
     ShoppingCartViewController *m_ShoppingCartViewController;
@@ -35,6 +36,7 @@
 @property(nonatomic,weak) IBOutlet UIButton *btReduction;
 
 @property(nonatomic,weak) IBOutlet UITextField *numOfCoffee;
+
 
 - (IBAction)shoppingCart;
 - (IBAction)buy;

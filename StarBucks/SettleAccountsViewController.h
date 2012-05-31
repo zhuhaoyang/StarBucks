@@ -7,13 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Global.h"
+#import "serviceAddOrderData.h"
 
 @interface SettleAccountsViewController : UIViewController
-{
+<serviceAddOrderDataCallBackDelegate>{
     UIButton *__weak btConfirmPay;
+    UILabel *__weak totalPrice;
+    serviceAddOrderData *m_serviceAddORderData;
 }
 
 @property(nonatomic,weak) IBOutlet UIButton *btConfirmPay;
+@property(nonatomic,weak) IBOutlet UILabel *totalPrice;
+@property(nonatomic,strong) serviceAddOrderData *m_serviceAddOrderData;
 
 - (IBAction)confirmPay:(id)sender;
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "HomePageViewController.h"
-#import "BMapKit.h"
+//#import "BMapKit.h"
 
 @interface ViewController : UIViewController
 {

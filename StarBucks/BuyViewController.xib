@@ -368,7 +368,7 @@
 							<object class="IBUILabel" id="981873176">
 								<reference key="NSNextResponder" ref="645612700"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{182, 247}, {42, 21}}</string>
+								<string key="NSFrame">{{174, 247}, {42, 21}}</string>
 								<reference key="NSSuperview" ref="645612700"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="851921763"/>
@@ -399,7 +399,7 @@
 							<object class="IBUITextField" id="486276575">
 								<reference key="NSNextResponder" ref="645612700"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{248, 244}, {32, 31}}</string>
+								<string key="NSFrame">{{234, 244}, {41, 31}}</string>
 								<reference key="NSSuperview" ref="645612700"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="62554476"/>
@@ -437,7 +437,7 @@
 							<object class="IBUIButton" id="851921763">
 								<reference key="NSNextResponder" ref="645612700"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{221, 247}, {23, 23}}</string>
+								<string key="NSFrame">{{206, 248}, {23, 23}}</string>
 								<reference key="NSSuperview" ref="645612700"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="486276575"/>
@@ -524,7 +524,7 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="703850366"/>
-								<object class="NSCustomResource" key="IBUINormalImage">
+								<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">42.png</string>
 								</object>
@@ -999,8 +999,6 @@
 							<reference ref="76273768"/>
 							<reference ref="1031424641"/>
 							<reference ref="486276575"/>
-							<reference ref="851921763"/>
-							<reference ref="981873176"/>
 							<reference ref="62554476"/>
 							<reference ref="179151009"/>
 							<reference ref="475060328"/>
@@ -1016,6 +1014,8 @@
 							<reference ref="524614361"/>
 							<reference ref="918215353"/>
 							<reference ref="379990315"/>
+							<reference ref="851921763"/>
+							<reference ref="981873176"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>

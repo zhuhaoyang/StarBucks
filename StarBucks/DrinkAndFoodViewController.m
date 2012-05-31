@@ -87,7 +87,28 @@
     dicDessert = [[NSDictionary alloc]initWithObjectsAndKeys:[[NSArray alloc]initWithObjects:@"甘薯杯子蛋糕",@"巧克力麦芬", @"甘薯杯子蛋糕",@"巧克力麦芬",@"甘薯杯子蛋糕",@"巧克力麦芬",nil],@"dessert", nil];
     
     dicDrinkAndFood = [[NSDictionary alloc]initWithObjectsAndKeys:dicEspresso,@"espresso",dicFrappuccinos,@"frappuccinos",dicCoffeeAndTea,@"coffeeAndTea",dicDessert,@"dessert", nil];
+
+    
+    
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]    
+                                    initWithTitle:@"首页"
+                                    style:UIBarButtonItemStyleBordered
+                                    target:self
+                                    action:@selector(homePage)];
+    NSArray *arr = [[NSArray alloc]initWithObjects:rightButton, nil];
+    
+    //    self.navigationItem.rightBarButtonItem = rightButton;
+    
+    [self.navigationItem setRightBarButtonItems:arr animated:YES]; 
+    //        [self.view addSubview:m_ScrollView];
+    
 }
+
+- (void)homePage
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 
 - (void)viewDidUnload
 {

@@ -21,7 +21,7 @@
 @synthesize m_request = _m_request;
 //@synthesize m_requestMode;
 @synthesize m_error = _m_error;
-
+@synthesize m_dicReceiveData = _m_dicReceiveData;
 #pragma mark -
 #pragma mark Initialization & Deallocation
 
@@ -62,48 +62,46 @@
 #pragma mark -
 #pragma mark RequestCreation and Request sending
 
--(void)sendRequestWithData:(NSDictionary*)aDic addr:(NSString *)addr
+-(void)sendRequestWithData:(NSString*)str addr:(NSString *)addr
 {
 	if (nil == m_request)
 	{
         //        UITextView *tx;
 		//服务器地址
         
-		NSString *theServerAddr	= @"http://192.168.1.110/mywebservice/Service1.asmx/";
+		NSString *theServerAddr	= @"http://58.246.148.238/mywebservice/Service1.asmx/";
 		//[[SystemSetting shareInstance] getServerUrl];
 		//拼凑请求地址
 		NSString *httpStr = [[NSString alloc] initWithFormat:@"%@%@",theServerAddr,addr];
 		NSURL *url = [[NSURL alloc] initWithString:httpStr];
-//		SAFE_RELEASE(httpStr);
 		
 		// Initialization the http engine (required)
 		m_request = [[ASIFormDataRequest alloc] initWithURL:url];
 		[m_request setRequestMethod:@"POST"]; // set post method
 		[m_request setTimeOutSeconds:kTimeOutDuration]; // set time out duration
 		[m_request setDelegate:self];
-//		SAFE_RELEASE(url);
 	}
 	
 	// Create body (required)
-	GDataXMLElement *element = [GDataXMLNode elementWithName:@"OrderId" stringValue:@"2"];
+//	GDataXMLElement *element = [GDataXMLNode elementWithName:@"OrderId" stringValue:@"2"];
     
 
     
 //    GDataXMLElement *element = [self creatRequestBody:aDic key:@"body"];
 
-	GDataXMLDocument *document = [[GDataXMLDocument alloc] initWithRootElement:element];
-	[document setVersion:@"1.0"];
-	[document setCharacterEncoding:@"UTF-8"];
-    NSData *bodyData = [document XMLData];
+//	GDataXMLDocument *document = [[GDataXMLDocument alloc] initWithRootElement:element];
+//	[document setVersion:@"1.0"];
+//	[document setCharacterEncoding:@"UTF-8"];
+//    NSData *bodyData = [document XMLData];
 //	NSString * str = [[NSString alloc]initWithData:bodyData encoding:NSUTF8StringEncoding];
     
-    NSString * str = [[NSString alloc]initWithString:@"OrderId=2"];
+//    NSString * str = [[NSString alloc]initWithString:@"OrderId=2"];
 
     
 	LOGS(@"required = %@",str);
 //	[str release];
 	// Add header (optional)
-	NSString *sDataLength = [[NSString alloc] initWithFormat:@"%d", [bodyData length]];
+	NSString *sDataLength = [[NSString alloc] initWithFormat:@"%d", [str length]];
 	[m_request addRequestHeader:@"Content-length" value:sDataLength];
     
     [m_request addRequestHeader:@"Content-Type"value:@"application/x-www-form-urlencoded"];
@@ -155,24 +153,24 @@
 }
 
 // Create the body
-- (GDataXMLElement *)creatRequestBody:(NSDictionary*)aDic key:(NSString *)key
-{
-	GDataXMLElement * rootElement = [GDataXMLNode elementWithName:key];
-	GDataXMLElement * oneElement;
-	NSArray * allKeys = [aDic allKeys];
-	NSUInteger i, count = [allKeys count];
-	for(i = 0; i < count; i++){
-		
-		if ([[aDic objectForKey:[allKeys objectAtIndex:i]] isKindOfClass:[NSDictionary class]]) {
-			oneElement = [self creatRequestBody:[aDic objectForKey:[allKeys objectAtIndex:i]] key:[allKeys objectAtIndex:i]];
-		}else {
-			oneElement = [GDataXMLNode elementWithName:[allKeys objectAtIndex:i]
-										   stringValue:[aDic objectForKey:[allKeys objectAtIndex:i]]];
-		}
-		[rootElement addChild:oneElement];
-	}	
-	return rootElement;
-}
+//- (GDataXMLElement *)creatRequestBody:(NSDictionary*)aDic key:(NSString *)key
+//{
+//	GDataXMLElement * rootElement = [GDataXMLNode elementWithName:key];
+//	GDataXMLElement * oneElement;
+//	NSArray * allKeys = [aDic allKeys];
+//	NSUInteger i, count = [allKeys count];
+//	for(i = 0; i < count; i++){
+//		
+//		if ([[aDic objectForKey:[allKeys objectAtIndex:i]] isKindOfClass:[NSDictionary class]]) {
+//			oneElement = [self creatRequestBody:[aDic objectForKey:[allKeys objectAtIndex:i]] key:[allKeys objectAtIndex:i]];
+//		}else {
+//			oneElement = [GDataXMLNode elementWithName:[allKeys objectAtIndex:i]
+//										   stringValue:[aDic objectForKey:[allKeys objectAtIndex:i]]];
+//		}
+//		[rootElement addChild:oneElement];
+//	}	
+//	return rootElement;
+//}
 
 #pragma mark -
 #pragma mark ASIHTTPRequestDelegate

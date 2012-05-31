@@ -10,8 +10,12 @@
 
 @interface Global : NSObject{
 
+    NSMutableDictionary *dicShopCart;
+    NSMutableArray *arrOrder;
 }
 
+@property(nonatomic,strong) NSMutableDictionary *dicShopCart;
+@property(nonatomic,strong) NSMutableArray *arrOrder;
 + (Global *) sharedGlobal;
 
 @end

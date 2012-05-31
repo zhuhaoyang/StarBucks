@@ -15,7 +15,7 @@
 #import "SettingViewController.h"
 #import "GoogleMapViewController.h"
 //#import "BaiduMapViewController.h"
-#import "BMapKit.h"
+//#import "BMapKit.h"
 
 @interface HomePageViewController : UIViewController{
     UIButton * __weak bt1;

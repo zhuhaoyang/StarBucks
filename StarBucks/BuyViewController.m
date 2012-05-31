@@ -31,12 +31,11 @@
 @synthesize btReduction = _btReduction;
 
 @synthesize numOfCoffee = _numOfCoffee;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization        
+        // Custom initialization
     }
     return self;
 }
@@ -78,8 +77,40 @@
 
 - (IBAction)buy
 {
+    
     m_ShoppingCartViewController = [[ShoppingCartViewController alloc]initWithNibName:@"ShoppingCartViewController" bundle:[NSBundle mainBundle]];
     [self.navigationController pushViewController:m_ShoppingCartViewController animated:YES];
+    
+    Global *global = [Global sharedGlobal];
+    
+    int addNnm = [self.numOfCoffee.text intValue];
+    int totalPrice;
+    
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *strDate = [dateFormatter stringFromDate:[NSDate date]];
+    
+    if ([global.dicShopCart count] == 0) {
+        totalPrice = addNnm * 20;
+        [global.dicShopCart setObject:@"星巴克拿铁"forKey:@"ProductName"];
+        [global.dicShopCart setObject:@"Zhu Haoyang" forKey:@"UserName"];
+        [global.dicShopCart setObject:@"星巴克教工路店" forKey:@"ShopName"];
+        [global.dicShopCart setObject:self.numOfCoffee.text forKey:@"Number"];
+        [global.dicShopCart setObject:[NSString stringWithFormat:@"%d",totalPrice] forKey:@"TotalPrice"];
+        [global.dicShopCart setObject:@"20" forKey:@"Price"];
+        [global.dicShopCart setObject:strDate forKey:@"CreateTime"];
+        [global.dicShopCart setObject:@"未提货" forKey:@"OrderStates"];
+        NSLog(@"%@",global.dicShopCart);
+    }else{
+        int oldNum = [[global.dicShopCart objectForKey:@"Number"] intValue];
+        int newNum = addNnm + oldNum;
+        totalPrice = newNum *20;
+        [global.dicShopCart setObject:[NSString stringWithFormat:@"%d",newNum] forKey:@"Number"];
+        [global.dicShopCart setObject:[NSString stringWithFormat:@"%d",totalPrice] forKey:@"TotalPrice"];
+        NSLog(@"%@",global.dicShopCart);
+    }
+
 }
 
 - (IBAction)shoppingCart
@@ -90,7 +121,36 @@
                                               cancelButtonTitle:@"确定" 
                                               otherButtonTitles:nil];
     [alertView show];
+    Global *global = [Global sharedGlobal];
+    
+    int addNnm = [self.numOfCoffee.text intValue];
+    int totalPrice;
 
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *strDate = [dateFormatter stringFromDate:[NSDate date]];
+    
+    if ([global.dicShopCart count] == 0) {
+        totalPrice = addNnm * 20;
+        [global.dicShopCart setObject:@"冰拿铁"forKey:@"ProductName"];
+        [global.dicShopCart setObject:@"Zhu Haoyang" forKey:@"UserName"];
+        [global.dicShopCart setObject:@"星巴克" forKey:@"ShopName"];
+        [global.dicShopCart setObject:self.numOfCoffee.text forKey:@"Number"];
+        [global.dicShopCart setObject:[NSString stringWithFormat:@"%d",totalPrice] forKey:@"TotalPrice"];
+        [global.dicShopCart setObject:@"20" forKey:@"Price"];
+        [global.dicShopCart setObject:strDate forKey:@"CreateTime"];
+        [global.dicShopCart setObject:@"未提货" forKey:@"OrderStates"];
+        NSLog(@"%@",global.dicShopCart);
+    }else{
+        int oldNum = [[global.dicShopCart objectForKey:@"Number"] intValue];
+        int newNum = addNnm + oldNum;
+        totalPrice = newNum *20;
+        [global.dicShopCart setObject:[NSString stringWithFormat:@"%d",newNum] forKey:@"Number"];
+        [global.dicShopCart setObject:[NSString stringWithFormat:@"%d",totalPrice] forKey:@"TotalPrice"];
+        NSLog(@"%@",global.dicShopCart);
+    }
+    NSLog(@"%d",[global.dicShopCart count]);
 }
 
 - (IBAction)ice:(id)sender

@@ -7,6 +7,7 @@
 //
 
 #import "GoogleMapViewController.h"
+#import "DrinkAndFoodViewController.h"
 
 @interface GoogleMapViewController ()
 
@@ -15,8 +16,11 @@
 @implementation GoogleMapViewController
 @synthesize mapView = _mapView;
 @synthesize m_CLLocationManager = _m_CLLocationManager;
-@synthesize bt = _bt;
+@synthesize segmented = _segmented;
+@synthesize m_tableView = _m_tableView;
+//@synthesize bt = _bt;
 @synthesize myAnnotation = _myAnnotation;
+@synthesize m_DrinkAndFoodViewController = _m_DrinkAndFoodViewController;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,15 +35,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-    self.bt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.bt.frame = CGRectMake(10, 320, 50, 30);
-    [self.bt addTarget:self action:@selector(clicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.bt];
+//    self.bt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    self.bt.frame = CGRectMake(10, 320, 50, 30);
+//    [self.bt addTarget:self action:@selector(clicked:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:self.bt];
+    
+    
+	NSArray *array = [[NSArray alloc]initWithObjects:@"购物车",@"已购买",nil];	
+	self.segmented = [[UISegmentedControl alloc]initWithItems:array];
+	self.segmented.segmentedControlStyle = UISegmentedControlStyleBar;
+	[self.segmented addTarget:self action:@selector(changeSegmented) forControlEvents:UIControlEventValueChanged];
+	self.segmented.selectedSegmentIndex = 0;
+	//[self.navigationController.navigationBar addSubview:segmented];
+	self.navigationItem.titleView = self.segmented;
+
     
     self.m_CLLocationManager = [[CLLocationManager alloc]init];
     self.m_CLLocationManager.delegate = self;
     [self.m_CLLocationManager startUpdatingLocation];
-    self.mapView = [[MKMapView alloc]initWithFrame:CGRectMake(0, 0, 320, 300)];
+    self.mapView = [[MKMapView alloc]initWithFrame:CGRectMake(0, 0, 320, 416)];
     
     self.mapView.delegate = self;
     self.mapView.mapType = MKMapTypeStandard;
@@ -56,9 +70,33 @@
 //    [mapView setRegion:region animated:YES];
 }
 
-- (void)clicked:(id)sender
-{
+//- (void)clicked:(id)sender
+//{
+//
+//
+//}
 
+- (void)changeSegmented
+{
+    if (self.segmented.selectedSegmentIndex == 0) {
+        
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+        [UIView setAnimationDelay:0.1];
+        [UIView setAnimationDuration:0.3];
+        self.m_tableView.frame = CGRectMake(320, 0, 320, 416);
+        self.mapView.frame = CGRectMake(0, 0, 320, 416);
+        [UIView commitAnimations];
+        
+    }else if(self.segmented.selectedSegmentIndex == 1){
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+        [UIView setAnimationDelay:0.1];
+        [UIView setAnimationDuration:0.3];
+        self.m_tableView.frame = CGRectMake(0, 0, 320, 416);
+        self.mapView.frame = CGRectMake(-320, 0, 320, 416);
+        [UIView commitAnimations];
+    }
 
 }
 
@@ -147,6 +185,8 @@
 - (void)clickedBt:(id)sender
 {
     NSLog(@"clicked!!");
+    m_DrinkAndFoodViewController = [[DrinkAndFoodViewController alloc]initWithNibName:@"DrinkAndFoodViewController" bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:m_DrinkAndFoodViewController animated:YES];
 }
 
 #pragma mark -
@@ -175,12 +215,9 @@
         test.longitude = 120.136753;
 //        30.274200
 //        120.136753
-        CLLocation *loc1 = self.mapView.userLocation.location;
-        CLLocation *loc2 = [[CLLocation alloc]initWithLatitude:30.273699 longitude:120.136753];
-        CLLocationDistance distance = [loc1 distanceFromLocation:loc2];
-//        NSLog(@"location.latitude = %f",self.mapView.userLocation.location.coordinate.latitude);
-//        NSLog(@"location.longitude = %f",self.mapView.userLocation.location.coordinate.longitude);
-        NSLog(@"Distance = %f",distance);
+//        CLLocation *loc1 = self.mapView.userLocation.location;
+//        CLLocation *loc2 = [[CLLocation alloc]initWithLatitude:30.273699 longitude:120.136753];
+//        CLLocationDistance distance = [loc1 distanceFromLocation:loc2];
         //   Annotation *annotation;
         if (self.myAnnotation == nil) {
             self.myAnnotation = [[Annotation alloc]initWithCoordinate:test];
@@ -202,8 +239,56 @@
 
         
         [self.mapView setRegion:adjustedRegion animated:YES];
-
+        [self.m_tableView reloadData];
     }
 }
 
+#pragma mark -
+#pragma tableView delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"Select Row:%i",[indexPath row]);
+    m_DrinkAndFoodViewController = [[DrinkAndFoodViewController alloc]initWithNibName:@"DrinkAndFoodViewController" bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:m_DrinkAndFoodViewController animated:YES];
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+}
+
+#pragma mark - 
+#pragma tableView data source
+
+- (NSInteger)tableView:(UITableView *)tableView 
+ numberOfRowsInSection:(NSInteger)section 
+{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath 
+{
+    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    CLLocation *loc1 = self.mapView.userLocation.location;
+    CLLocation *loc2 = [[CLLocation alloc]initWithLatitude:30.273699 longitude:120.136753];
+    CLLocationDistance distance = [loc1 distanceFromLocation:loc2];
+
+    UIImageView *shop = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"1933_1.jpg"]];
+    shop.frame = CGRectMake(5, 5, 60, 60);
+    [cell addSubview:shop];
+    
+    UILabel *shopName = [[UILabel alloc]initWithFrame:CGRectMake(100, 15, 200, 20)];
+    shopName.text = @"星巴克教工路店";
+//    [shopName setTextAlignment:UITextAlignmentCenter];
+    [cell addSubview:shopName];
+    
+    UILabel *l_distance = [[UILabel alloc]initWithFrame:CGRectMake(100, 40, 200, 20)];
+    l_distance.text = [NSString stringWithFormat:@"距离您:  %f 米",distance];
+    l_distance.font = [UIFont systemFontOfSize:12];
+    [cell addSubview:l_distance];
+    
+    return cell;
+}
 @end

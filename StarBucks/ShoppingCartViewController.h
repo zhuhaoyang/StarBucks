@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 //#import "CellForShoppingCartViewController.h"
 #import "SettleAccountsViewController.h"
+#import "Global.h"
+#import "serviceGetOrderData.h"
+#import "serviceGetOneOrderData.h"
 
 @interface ShoppingCartViewController : UIViewController
 <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>{
@@ -26,8 +29,10 @@
     UISegmentedControl *segmented;
     
     SettleAccountsViewController *m_SettleAccountsViewController;
-
+    serviceGetOrderData *m_serviceGetOrderData;
+    serviceGetOneOrderData *m_serviceGetOneOrderData;
 //    id  <UITextFieldDelegate> __weak textFieldDelegate;
+    NSInteger nuOfOrder;
 
 }
 @property(nonatomic,weak) IBOutlet UITableView *m_tableView;
@@ -44,5 +49,6 @@
 @property(nonatomic,strong) UISegmentedControl *segmented;
 @property(nonatomic,strong) SettleAccountsViewController *m_SettleAccountsViewController;
 //@property(nonatomic,weak) id <UITextFieldDelegate> textFieldDelegate;
-
+@property(nonatomic,strong) serviceGetOrderData *m_serviceGetOrderData;
+@property(nonatomic,strong) serviceGetOneOrderData *m_serviceGetOneOrderData;
 @end

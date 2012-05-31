@@ -12,13 +12,17 @@ static Global *instance = nil;
 
 
 @implementation Global
+@synthesize dicShopCart = _dicShopCart;
+@synthesize arrOrder = _arrOrder;
+
 
 - (id)init
 {
 	self = [super init];
 	if (self)
 	{
-
+        self.dicShopCart = [[NSMutableDictionary alloc]init];
+        self.arrOrder = [[NSMutableArray alloc]init];
     }
 	return self;
 }
